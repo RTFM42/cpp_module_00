@@ -92,7 +92,7 @@ void PhoneBook::search(void)
 		return ;
 	while (++index <= this->__index__)
 	{
-		std::cout << "|" << fix10(std::wstring(index));
+		std::cout << "|" << fix10("" + (index + '0'));
 		std::cout << "|" << fix10(this->__contacts__[index].getFname());
 		std::cout << "|" << fix10(this->__contacts__[index].getLname());
 		std::cout << "|" << fix10(this->__contacts__[index].getNname());
